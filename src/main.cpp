@@ -86,7 +86,6 @@ static bool record_status = true;
 static I2SSampler *input = NULL;
 #endif
 
-//set the gain. 0 = No sound; 1 = No gain; Everything >1 equals more gain depending on the number
 #define SDCARD_WRITING_ENABLED  1 
 
 static int record_buffer_idx = 0;
@@ -103,6 +102,7 @@ static signed short recordBuffer[32000];
 //External Blink LED
 #define LED_PIN 21
 
+//set the gain. 0 = No sound; 1 = No gain; Everything >1 equals more gain depending on the number
 #define I2S_DATA_SCALING_FACTOR 1
 
 // Replace with your network credentials
